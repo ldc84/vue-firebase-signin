@@ -23,6 +23,13 @@ export default {
   },
   methods: {
     SignUp () {
+      // sign-out
+      // firebase.auth().signOut()
+
+      // sign-in
+      // firebase.auth().signInWithEmailAndPassword(email, password)
+
+      // sign-up
       firebase.auth().createUserWithEmailAndPassword(this.email, this.password)
         .then((user) => {
           console.log(user)
